@@ -17,8 +17,7 @@ export function PricingSection() {
         </div>
 
         <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-white/10 bg-white/[0.03] p-8 text-center md:p-12">
-          <p className="text-base font-semibold text-white">Implementation starts from $300/day</p>
-          <ul className="mt-8 grid gap-3 text-sm text-neutral-300 md:grid-cols-3">
+          <ul className="grid gap-3 text-sm text-neutral-300 md:grid-cols-3">
             {pricingItems.map((item) => (
               <li key={item} className="flex items-start gap-2">
                 <Check size={14} className="mt-0.5 text-[#659680]" />
