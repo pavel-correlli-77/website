@@ -5,7 +5,7 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden px-6 pb-24 pt-32 md:pt-40 md:pb-32">
       <div className="relative mx-auto max-w-6xl">
-        <div className="flex flex-col items-start gap-12 lg:flex-row lg:items-center lg:gap-16">
+        <div className="flex flex-col items-start gap-12 lg:flex-row lg:items-end lg:gap-16">
           <div className="flex-1">
             <h1 className="text-balance text-4xl font-semibold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
               AI agents and n8n flows for sales and marketing systems.
@@ -37,7 +37,7 @@ export function HeroSection() {
                 href="#cta"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#659680] px-6 py-3 text-xs font-semibold tracking-[0.2em] text-black uppercase transition-opacity hover:opacity-90"
               >
-                Find automation opportunities.
+                Find automation opportunities
                 <ArrowRight size={16} />
               </a>
             </div>

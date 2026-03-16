@@ -7,9 +7,6 @@ export function AboutSection() {
         </h2>
         <div className="mx-auto mt-8 max-w-2xl space-y-3 text-base leading-relaxed text-neutral-400">
           <p>AI agents don’t replace your sales team. They remove the manual work around it.</p>
-          <p className="text-white">
-            In Correlli we automate the operational layer of your sales and marketing process.
-          </p>
         </div>
       </div>
     </section>
