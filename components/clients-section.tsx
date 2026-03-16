@@ -4,50 +4,32 @@ const clients = [
   {
     name: "Algonova",
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Algonova-XRfDpAN9HQHBC1hTsfAyNNIArKG05h.png",
-    width: 140,
-    height: 48,
-    hasDarkBg: false,
-    hasWhiteBg: false,
+    invert: false,
   },
   {
     name: "Jetlend",
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jetlend-S9UIwnYoAaYBqx3tVtmImCXINFhQJy.png",
-    width: 140,
-    height: 48,
-    hasDarkBg: false,
-    hasWhiteBg: true,
+    invert: false,
   },
   {
     name: "OneForce",
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/oneforce-U68TUoa5EhLwQ3O25GIgTfTGjKTa5V.png",
-    width: 140,
-    height: 48,
-    hasDarkBg: false,
-    hasWhiteBg: true,
+    invert: false,
   },
   {
     name: "keyIT",
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/keyit.PNG-hAvJc6N8WdJ7coM5VV2D04T6dWd326.png",
-    width: 120,
-    height: 48,
-    hasDarkBg: false,
-    hasWhiteBg: true,
+    invert: false,
   },
   {
     name: "BR Group",
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/brgroup-KeqBsWAnexWdHryoyV8cWr9of4q5aH.png",
-    width: 160,
-    height: 48,
-    hasDarkBg: true,
-    hasWhiteBg: false,
+    invert: true,
   },
   {
     name: "Modifiers",
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/modifiers-E5LQyHy83mpvp1xQyTbATGZgsJcrzz.png",
-    width: 140,
-    height: 48,
-    hasDarkBg: true,
-    hasWhiteBg: false,
+    invert: true,
   },
 ]
 
@@ -59,35 +41,22 @@ export function ClientsSection() {
           Clients & partners
         </p>
 
-        <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
+        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
           {clients.map((client) => (
             <div
               key={client.name}
-              className="flex h-14 shrink-0 items-center justify-center opacity-60 transition-opacity hover:opacity-100"
+              className="flex h-14 shrink-0 items-center justify-center opacity-70 transition-opacity hover:opacity-100"
             >
-              {client.hasWhiteBg ? (
-                <div className="flex h-12 items-center justify-center rounded-lg bg-white/90 px-4">
-                  <Image
-                    src={client.src}
-                    alt={`${client.name} logo`}
-                    width={client.width}
-                    height={client.height}
-                    className="h-8 w-auto object-contain"
-                    style={{ maxWidth: `${client.width}px` }}
-                  />
-                </div>
-              ) : (
-                <div className="flex h-12 items-center justify-center overflow-hidden rounded-lg px-4">
-                  <Image
-                    src={client.src}
-                    alt={`${client.name} logo`}
-                    width={client.width}
-                    height={client.height}
-                    className="h-10 w-auto rounded-lg object-contain"
-                    style={{ maxWidth: `${client.width}px` }}
-                  />
-                </div>
-              )}
+              <div className="flex h-12 items-center justify-center rounded-lg bg-white/90 px-4">
+                <Image
+                  src={client.src}
+                  alt={`${client.name} logo`}
+                  width={140}
+                  height={48}
+                  className={`h-8 w-auto object-contain ${client.invert ? "invert" : ""}`}
+                  style={{ maxWidth: "140px" }}
+                />
+              </div>
             </div>
           ))}
         </div>

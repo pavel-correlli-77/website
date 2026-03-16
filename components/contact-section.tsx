@@ -5,19 +5,13 @@ export function ContactSection() {
     <section id="cta" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-3xl">
         <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-10 text-center md:p-16">
-          <p className="text-xs tracking-[0.2em] text-neutral-500 uppercase">
-            Book a review
-          </p>
-          <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-white md:text-4xl">
+          <h2 className="text-balance text-3xl font-semibold tracking-tight text-white md:text-4xl">
             Book a Workflow Review
           </h2>
-          <div className="mx-auto mt-6 max-w-xl text-left text-sm text-neutral-300">
-            <p className="mb-3">In a short call we will:</p>
-            <ul className="list-none space-y-2">
-              <li>Map your lead-to-client process</li>
-              <li>Identify automation and conversion gaps</li>
-              <li>Estimate implementation effort</li>
-            </ul>
+          <div className="mx-auto mt-6 max-w-xl text-sm text-neutral-300">
+            <p>Map your lead-to-client process.</p>
+            <p>Identify automation and conversion gaps.</p>
+            <p>Estimate implementation effort.</p>
           </div>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a

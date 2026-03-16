@@ -26,11 +26,8 @@ export function ProcessSection() {
     <section id="process" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="mb-4 text-xs tracking-[0.2em] text-neutral-500 uppercase">
-            How we work
-          </p>
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-white md:text-4xl">
-            A clear path from audit to automation
+            How we work
           </h2>
         </div>
         <div className="mt-14 grid gap-6 md:grid-cols-2">

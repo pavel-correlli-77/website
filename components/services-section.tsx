@@ -3,27 +3,27 @@ import { RefreshCw, FileText, Route, Brain } from "lucide-react"
 const services = [
   {
     icon: RefreshCw,
-    title: "Lead Reactivation",
+    title: "Behavior-based follow-ups for the right leads",
     description:
-      "Behavior-based follow-ups that bring leads back without spamming everyone.",
+      "Reactivate only the leads that match the scenario, without spamming everyone.",
   },
   {
     icon: FileText,
-    title: "CRM and Invoicing",
+    title: "CRM, invoicing, and documents after each call",
     description:
-      "CRM updates, documents, and invoices happen automatically after each call.",
+      "Operational updates happen automatically, without manual entry.",
   },
   {
     icon: Route,
-    title: "Client Journeys",
+    title: "Automated journeys after key events",
     description:
-      "Journeys after key events: trial booked, attended, missed, consultation done.",
+      "Trial booked, attended, missed, consultation completed.",
   },
   {
     icon: Brain,
-    title: "AI Sales Memory",
+    title: "Structured call summaries attached to CRM",
     description:
-      "Structured call summaries attached to CRM, ready for follow-ups.",
+      "AI memory that preserves context for fast follow-ups.",
   },
 ]
 
