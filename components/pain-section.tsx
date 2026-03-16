@@ -1,0 +1,59 @@
+const painPoints = [
+  {
+    title: "Turnover and slow onboarding",
+    description:
+      "CRM discipline degrades without daily CSO attention. New sales managers take too long to reach full efficiency.",
+  },
+  {
+    title: "Leads receive identical follow-ups regardless of behavior",
+    description:
+      "High-intent prospects get the same messages as cold leads, which lowers conversion and weakens trust.",
+  },
+  {
+    title: "Managers spend too much time on manual CRM work",
+    description:
+      "After each call they must write notes, update fields, send emails, move deals, and create invoices. This adds 10–15 minutes per call.",
+  },
+  {
+    title: "Sales calls lose context",
+    description:
+      "Without structured summaries, teams forget objections, commitments, and next steps. Follow-ups become slow and less effective.",
+  },
+  {
+    title: "Trial users disappear after the first interaction",
+    description:
+      "Many leads stop responding after a trial booking or consultation. Without tailored follow-ups, they rarely return.",
+  },
+]
+
+export function PainSection() {
+  return (
+    <section id="pain" className="px-6 py-24 md:py-32">
+      <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="mb-4 text-xs tracking-[0.2em] text-neutral-500 uppercase">
+            Typical problems in lead-driven businesses
+          </p>
+          <h2 className="text-balance text-3xl font-semibold tracking-tight text-white md:text-4xl">
+            The operational pain nobody has time to fix
+          </h2>
+        </div>
+        <div className="mt-14 grid gap-6 md:grid-cols-2">
+          {painPoints.map((item) => (
+            <div
+              key={item.title}
+              className="rounded-2xl border border-white/10 bg-white/[0.03] p-6"
+            >
+              <h3 className="text-base font-semibold text-white">
+                {item.title}
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-neutral-400">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}

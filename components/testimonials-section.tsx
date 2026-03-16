@@ -45,8 +45,11 @@ export function TestimonialsSection() {
     <section id="testimonials" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-balance text-3xl font-bold tracking-tight text-white md:text-4xl">
-            What our clients say
+          <p className="mb-4 text-xs tracking-[0.2em] text-neutral-500 uppercase">
+            Testimonials
+          </p>
+          <h2 className="text-balance text-3xl font-semibold tracking-tight text-white md:text-4xl">
+            What partners say after implementation
           </h2>
         </div>
 

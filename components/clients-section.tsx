@@ -55,8 +55,8 @@ export function ClientsSection() {
   return (
     <section id="clients" className="px-6 py-20 md:py-28">
       <div className="mx-auto max-w-6xl">
-        <p className="mb-12 text-center text-xs tracking-widest text-neutral-500 uppercase">
-          Trusted By
+        <p className="mb-12 text-center text-xs tracking-[0.2em] text-neutral-500 uppercase">
+          Clients & partners
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">

@@ -5,8 +5,10 @@ import Image from "next/image"
 import { Menu, X } from "lucide-react"
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
+  { label: "Core", href: "#core" },
+  { label: "Problems", href: "#pain" },
+  { label: "Solutions", href: "#solutions" },
+  { label: "Process", href: "#process" },
   { label: "Clients", href: "#clients" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "Pricing", href: "#pricing" },
@@ -44,12 +46,10 @@ export function Header() {
         </nav>
 
         <a
-          href="https://cal.com/correlli/n8n-ai-agents-discovery"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden rounded-full bg-white px-5 py-2 text-sm font-medium text-black transition-opacity hover:opacity-90 md:inline-block"
+          href="#cta"
+          className="hidden rounded-full bg-[#659680] px-5 py-2 text-sm font-semibold text-black transition-opacity hover:opacity-90 md:inline-block"
         >
-          Book a Discovery Call
+          Book Sales Workflow Review
         </a>
 
         <button
@@ -75,13 +75,11 @@ export function Header() {
               </a>
             ))}
             <a
-              href="https://cal.com/correlli/n8n-ai-agents-discovery"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#cta"
               onClick={() => setMobileOpen(false)}
-              className="mt-2 inline-block rounded-full bg-white px-5 py-2 text-center text-sm font-medium text-black"
+              className="mt-2 inline-block rounded-full bg-[#659680] px-5 py-2 text-center text-sm font-semibold text-black"
             >
-              Book a Discovery Call
+              Book Sales Workflow Review
             </a>
           </nav>
         </div>

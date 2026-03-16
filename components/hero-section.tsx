@@ -4,55 +4,63 @@ import { ArrowRight } from "lucide-react"
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden px-6 pb-24 pt-32 md:pt-40 md:pb-32">
-      {/* Subtle grid background */}
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
-
       <div className="relative mx-auto max-w-6xl">
-        <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-center lg:gap-16">
-          {/* Text content */}
-          <div className="flex-1 text-center lg:text-left">
-            <div className="mb-6 inline-block rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm tracking-widest text-neutral-400 uppercase md:text-base">
-              AI Automation Studio
+        <div className="flex flex-col items-start gap-12 lg:flex-row lg:items-center lg:gap-16">
+          <div className="flex-1">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-2 text-xs tracking-[0.2em] text-neutral-400 uppercase">
+              Sales Workflow Automation
             </div>
-            <h1 className="text-balance text-4xl font-bold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
-              Stop chasing AI trends.
-              <br />
-              <span className="text-neutral-500">Start using them.</span>
+            <h1 className="text-balance text-4xl font-semibold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
+              Sales Workflow Automation for Lead-Driven Businesses
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-400 lg:text-xl">
-              We help small businesses become more productive and profitable by
-              eliminating manual tasks and streamlining sales and marketing
-              through custom, end-to-end automation.
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300 lg:text-xl">
+              We automate the entire journey from <span className="text-white">lead → call → trial → follow-up → payment</span> for
+              businesses that sell through consultations or phone calls.
             </p>
-            <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-400">
+              Reduce manual work for sales teams, gain transparency and control, and speed up onboarding for new managers.
+            </p>
+            <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row">
               <a
-                href="https://cal.com/correlli/n8n-ai-agents-discovery"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90"
+                href="#cta"
+                className="inline-flex items-center gap-2 rounded-full bg-[#659680] px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90"
               >
-                Book a Discovery Call
+                Book Sales Workflow Review
                 <ArrowRight size={16} />
               </a>
               <a
-                href="#services"
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-neutral-300 transition-colors hover:border-white/30 hover:text-white"
+                href="#process"
+                className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-neutral-200 transition-colors hover:border-white/30 hover:text-white"
               >
-                Explore Services
+                See how we work
               </a>
+            </div>
+            <div className="mt-10 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+              <p className="text-xs tracking-[0.2em] text-neutral-500 uppercase">
+                For businesses where every client starts with a call
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3 text-sm text-neutral-300">
+                {[
+                  "Online schools",
+                  "Training programs",
+                  "Coaching businesses",
+                  "Kids academies",
+                  "Education platforms",
+                  "Service businesses selling through consultations",
+                ].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-white/10 bg-white/5 px-4 py-1"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
 
-          {/* Founder photo */}
           <div className="relative flex-shrink-0">
-            <div className="relative h-[360px] w-[300px] overflow-hidden rounded-2xl border border-white/10 md:h-[440px] md:w-[360px]">
+            <div className="relative h-[360px] w-[300px] overflow-hidden rounded-2xl border border-white/10 md:h-[460px] md:w-[380px]">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Master%20Pavel%20Inchikov-ZjZdvcZuStUL0Azf0ilm5R6Uxj7P0R.jpg"
                 alt="Pavel Inchikov, Founder of Correlli Engineering"
@@ -61,12 +69,16 @@ export function HeroSection() {
                 priority
               />
             </div>
-            <div className="absolute -bottom-4 left-4 right-4 rounded-xl border border-white/10 bg-[#0a0a0a]/90 px-5 py-3 backdrop-blur-sm md:left-6 md:right-6">
-              <p className="text-sm font-semibold text-white">
-                Pavel Inchikov
+            <div className="absolute -bottom-6 left-4 right-4 rounded-2xl border border-white/10 bg-[#0a0a0a]/90 px-5 py-4 backdrop-blur-sm md:left-6 md:right-6">
+              <p className="text-sm font-semibold text-white">Pavel Inchikov</p>
+              <p className="text-xs text-neutral-400">
+                Former Sales Manager and CSO in lead-driven education businesses
               </p>
-              <p className="text-xs text-neutral-500">
-                Founder & Systems Architect
+              <p className="mt-2 text-xs text-neutral-500">
+                Go-to-Market engineer for consulting companies · Automation specialist in a US-based startup
+              </p>
+              <p className="mt-2 text-xs text-neutral-500">
+                I automate sales and marketing workflows I previously had to manage manually.
               </p>
             </div>
           </div>

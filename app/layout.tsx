@@ -1,14 +1,14 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, JetBrains_Mono } from 'next/font/google'
+import { Sora, IBM_Plex_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _inter = Inter({ subsets: ["latin", "cyrillic"] });
-const _jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] });
+const _sora = Sora({ subsets: ["latin"], variable: "--font-sora" });
+const _ibmPlexMono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
-  title: 'Correlli Engineering | AI Automation Studio for SMBs',
-  description: 'Stop chasing AI trends and start using them. Correlli Engineering helps small businesses become more productive and profitable by eliminating manual tasks and streamlining operations.',
+  title: 'Correlli Engineering | Sales Workflow Automation',
+  description: 'Sales workflow automation for lead-driven businesses. We automate the journey from lead to call, trial, follow-up, and payment.',
 }
 
 export const viewport: Viewport = {
@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className="font-sans antialiased bg-[#0a0a0a] text-white">
+    <html lang="en" className={`dark ${_sora.variable} ${_ibmPlexMono.variable}`}>
+      <body className="font-sans antialiased text-white correlli-bg">
         {children}
         <Analytics />
       </body>

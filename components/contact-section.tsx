@@ -2,30 +2,36 @@ import { ArrowRight } from "lucide-react"
 
 export function ContactSection() {
   return (
-    <section id="contact" className="px-6 py-24 md:py-32">
+    <section id="cta" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-3xl">
-        <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-10 text-center md:p-16">
-          <h2 className="text-balance text-3xl font-bold tracking-tight text-white md:text-4xl">
-            Start working smarter
-          </h2>
-          <p className="mx-auto mt-5 max-w-lg text-lg leading-relaxed text-neutral-400">
-            Book a free discovery call. We will audit your operations, identify
-            automation opportunities, and build a roadmap to save you time and
-            money.
+        <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-10 text-center md:p-16">
+          <p className="text-xs tracking-[0.2em] text-neutral-500 uppercase">
+            Book a workflow review
           </p>
+          <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-white md:text-4xl">
+            Book a Workflow Review
+          </h2>
+          <div className="mx-auto mt-6 max-w-xl text-left text-sm text-neutral-300">
+            <p className="mb-3">In a short call we will:</p>
+            <ul className="list-none space-y-2">
+              <li>Map your lead-to-client process</li>
+              <li>Identify automation and conversion opportunities</li>
+              <li>Estimate implementation effort</li>
+            </ul>
+          </div>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
               href="https://cal.com/correlli/n8n-ai-agents-discovery"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90"
+              className="inline-flex items-center gap-2 rounded-full bg-[#659680] px-8 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90"
             >
-              Book a Discovery Call
+              Schedule a Call
               <ArrowRight size={16} />
             </a>
           </div>
-          <p className="mt-6 text-xs text-neutral-600">
-            No commitment required. Let&apos;s talk about your business.
+          <p className="mt-6 text-xs text-neutral-500">
+            No commitment required. You will leave with a clear automation plan.
           </p>
         </div>
       </div>
