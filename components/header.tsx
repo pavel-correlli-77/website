@@ -49,7 +49,7 @@ export function Header() {
           href="#cta"
           className="hidden rounded-full bg-[#659680] px-5 py-2 text-sm font-semibold text-black transition-opacity hover:opacity-90 md:inline-block"
         >
-          Book Sales Workflow Review
+          Book Review
         </a>
 
         <button
@@ -79,7 +79,7 @@ export function Header() {
               onClick={() => setMobileOpen(false)}
               className="mt-2 inline-block rounded-full bg-[#659680] px-5 py-2 text-center text-sm font-semibold text-black"
             >
-              Book Sales Workflow Review
+              Book Review
             </a>
           </nav>
         </div>

@@ -132,7 +132,7 @@ html {
   background-color: #0a0a0a;
   background-image: url('/correlli-hex-bg.jpeg');
   background-repeat: repeat;
-  background-size: 420px;
+  background-size: 380px;
   background-attachment: fixed;
 }
 
@@ -142,9 +142,16 @@ html {
   inset: 0;
   pointer-events: none;
   background: radial-gradient(800px circle at 15% 10%, rgba(101, 150, 128, 0.12), transparent 55%),
-    radial-gradient(900px circle at 85% 20%, rgba(101, 150, 128, 0.08), transparent 60%),
-    linear-gradient(180deg, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.96));
+    radial-gradient(900px circle at 85% 20%, rgba(101, 150, 128, 0.1), transparent 60%),
+    linear-gradient(180deg, rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.94));
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .correlli-bg {
+    background-attachment: scroll;
+    background-size: 320px;
+  }
 }
 
 @keyframes fade-in-up {

@@ -3,27 +3,27 @@ import { RefreshCw, FileText, Route, Brain } from "lucide-react"
 const services = [
   {
     icon: RefreshCw,
-    title: "Lead Reactivation Automation",
+    title: "Lead Reactivation",
     description:
-      "Instead of sending identical messages to everyone, the system reacts to real lead behavior.",
+      "Behavior-based follow-ups that bring leads back without spamming everyone.",
   },
   {
     icon: FileText,
-    title: "Automated CRM and Invoicing Workflow",
+    title: "CRM and Invoicing",
     description:
-      "Managers should not spend time on operational tasks. CRM updates, documents, and invoices happen automatically.",
+      "CRM updates, documents, and invoices happen automatically after each call.",
   },
   {
     icon: Route,
-    title: "Client Journey Automation",
+    title: "Client Journeys",
     description:
-      "Automated journeys after key events: trial booked, trial attended, trial missed, consultation completed.",
+      "Journeys after key events: trial booked, attended, missed, consultation done.",
   },
   {
     icon: Brain,
-    title: "AI Sales Call Memory",
+    title: "AI Sales Memory",
     description:
-      "AI automatically generates structured summaries of each call and attaches them to the CRM.",
+      "Structured call summaries attached to CRM, ready for follow-ups.",
   },
 ]
 
@@ -36,7 +36,7 @@ export function ServicesSection() {
             Typical systems we deploy
           </p>
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-white md:text-4xl">
-            Automation systems that keep revenue moving
+            Systems that keep revenue moving
           </h2>
         </div>
 

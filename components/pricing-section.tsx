@@ -1,4 +1,4 @@
-import { ArrowRight, Check } from "lucide-react"
+import { Check } from "lucide-react"
 
 const pricingItems = [
   "Automation projects start from $300 per implementation day",
@@ -25,13 +25,6 @@ export function PricingSection() {
               <p className="text-sm text-neutral-400">Implementation day rate</p>
               <p className="mt-2 text-4xl font-semibold text-white">$300</p>
             </div>
-            <a
-              href="#cta"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#659680] px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90"
-            >
-              Schedule a Call
-              <ArrowRight size={16} />
-            </a>
           </div>
           <ul className="mt-8 grid gap-3 text-sm text-neutral-300 md:grid-cols-3">
             {pricingItems.map((item) => (

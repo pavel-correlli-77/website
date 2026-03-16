@@ -2,27 +2,22 @@ const painPoints = [
   {
     title: "Turnover and slow onboarding",
     description:
-      "CRM discipline degrades without daily CSO attention. New sales managers take too long to reach full efficiency.",
+      "CRM discipline drops without daily leadership. New managers take too long to ramp.",
   },
   {
     title: "Leads receive identical follow-ups regardless of behavior",
     description:
-      "High-intent prospects get the same messages as cold leads, which lowers conversion and weakens trust.",
+      "High-intent prospects get the same messages as cold leads. Conversion suffers.",
   },
   {
     title: "Managers spend too much time on manual CRM work",
     description:
-      "After each call they must write notes, update fields, send emails, move deals, and create invoices. This adds 10–15 minutes per call.",
+      "Notes, fields, invoices, follow-ups and pipeline updates take 10–15 minutes per call.",
   },
   {
     title: "Sales calls lose context",
     description:
-      "Without structured summaries, teams forget objections, commitments, and next steps. Follow-ups become slow and less effective.",
-  },
-  {
-    title: "Trial users disappear after the first interaction",
-    description:
-      "Many leads stop responding after a trial booking or consultation. Without tailored follow-ups, they rarely return.",
+      "Without structured summaries, teams forget objections, commitments, and next steps.",
   },
 ]
 

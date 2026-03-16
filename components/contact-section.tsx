@@ -6,7 +6,7 @@ export function ContactSection() {
       <div className="mx-auto max-w-3xl">
         <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-10 text-center md:p-16">
           <p className="text-xs tracking-[0.2em] text-neutral-500 uppercase">
-            Book a workflow review
+            Book a review
           </p>
           <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-white md:text-4xl">
             Book a Workflow Review
@@ -15,7 +15,7 @@ export function ContactSection() {
             <p className="mb-3">In a short call we will:</p>
             <ul className="list-none space-y-2">
               <li>Map your lead-to-client process</li>
-              <li>Identify automation and conversion opportunities</li>
+              <li>Identify automation and conversion gaps</li>
               <li>Estimate implementation effort</li>
             </ul>
           </div>
@@ -26,7 +26,7 @@ export function ContactSection() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-[#659680] px-8 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90"
             >
-              Schedule a Call
+              Book Review
               <ArrowRight size={16} />
             </a>
           </div>
