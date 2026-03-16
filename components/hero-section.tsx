@@ -14,7 +14,7 @@ export function HeroSection() {
               Automate Sales Workflows
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300 lg:text-xl">
-              We automate the full journey from <span className="text-white">lead -> call -> trial -> follow-up -> payment</span> for
+              We automate the full journey from <span className="text-white">lead &rarr; call &rarr; trial &rarr; follow-up &rarr; payment</span> for
               businesses that sell through consultations or phone calls.
             </p>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-400">
