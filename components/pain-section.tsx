@@ -27,7 +27,7 @@ export function PainSection() {
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-white md:text-4xl">
-            Typical problems in lead-driven businesses
+            Typical problems in lead-driven businesses we solve
           </h2>
         </div>
         <div className="mt-14 grid gap-6 md:grid-cols-2">

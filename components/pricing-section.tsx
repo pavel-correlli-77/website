@@ -17,9 +17,7 @@ export function PricingSection() {
         </div>
 
         <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-white/10 bg-white/[0.03] p-8 text-center md:p-12">
-          <p className="text-sm text-neutral-400">From</p>
-          <p className="mt-2 text-4xl font-semibold text-white">$300</p>
-          <p className="mt-2 text-sm text-neutral-400">per implementation day</p>
+          <p className="text-sm text-neutral-400">From $300 per implementation day</p>
           <ul className="mt-8 grid gap-3 text-sm text-neutral-300 md:grid-cols-3">
             {pricingItems.map((item) => (
               <li key={item} className="flex items-start gap-2">

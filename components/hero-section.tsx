@@ -8,27 +8,9 @@ export function HeroSection() {
         <div className="flex flex-col items-start gap-12 lg:flex-row lg:items-center lg:gap-16">
           <div className="flex-1">
             <h1 className="text-balance text-4xl font-semibold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
-              Sales &amp; Marketing Automation
+              Sales &amp; Marketing Automation with AI Agents
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300 lg:text-xl">
-              We automate sales and marketing workflows for businesses where every client starts with a call.
-            </p>
-            <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row">
-              <a
-                href="#cta"
-                className="inline-flex items-center gap-2 rounded-full bg-[#659680] px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90"
-              >
-                Book Review
-                <ArrowRight size={16} />
-              </a>
-              <a
-                href="#process"
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-neutral-200 transition-colors hover:border-white/30 hover:text-white"
-              >
-                See how we work
-              </a>
-            </div>
-            <div className="mt-10 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+            <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
               <p className="text-xs tracking-[0.2em] text-neutral-500 uppercase">
                 For businesses where every client starts with a call
               </p>
@@ -49,6 +31,21 @@ export function HeroSection() {
                   </span>
                 ))}
               </div>
+            </div>
+            <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row">
+              <a
+                href="#cta"
+                className="inline-flex items-center gap-2 rounded-full bg-[#659680] px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90"
+              >
+                Book Review
+                <ArrowRight size={16} />
+              </a>
+              <a
+                href="#process"
+                className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-neutral-200 transition-colors hover:border-white/30 hover:text-white"
+              >
+                See how we work
+              </a>
             </div>
           </div>
 
