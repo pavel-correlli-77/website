@@ -3,27 +3,27 @@ import { RefreshCw, FileText, Route, Brain } from "lucide-react"
 const services = [
   {
     icon: RefreshCw,
-    title: "Behavior-based follow-ups for the right leads",
+    title: "Automatic call summaries and context memory",
     description:
-      "Reactivate only the leads that match the scenario, without spamming everyone.",
+      "Every call is transcribed and summarized. Key objections, commitments and next steps are attached to the deal so the next conversation always starts with full context.",
   },
   {
     icon: FileText,
-    title: "CRM, invoicing, and documents after each call",
+    title: "Behavior-based follow-ups and reactivation",
     description:
-      "Operational updates happen automatically, without manual entry.",
+      "Communication adapts to stage, intent and previous actions. Leads receive the right follow-up instead of being pushed through the same sequence.",
   },
   {
     icon: Route,
-    title: "Automated journeys after key events",
+    title: "Automatic CRM updates after every call",
     description:
-      "Trial booked, attended, missed, consultation completed.",
+      "Key fields, notes and next steps are extracted from conversations and written directly to CRM. Reps focus on selling instead of filling forms.",
   },
   {
     icon: Brain,
-    title: "Structured call summaries attached to CRM",
+    title: "AI feedback and coaching for sales calls",
     description:
-      "AI memory that preserves context for fast follow-ups.",
+      "Calls are automatically analyzed against your sales framework. Reps receive structured feedback so new hires ramp faster and managers spend less time on manual reviews.",
   },
 ]
 
@@ -33,7 +33,7 @@ export function ServicesSection() {
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-white md:text-4xl">
-            Systems we deploy
+            Operational AI systems we deploy
           </h2>
         </div>
 

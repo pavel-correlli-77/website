@@ -1,23 +1,23 @@
 const painPoints = [
   {
-    title: "Turnover and slow onboarding",
+    title: "Managers lose lead context between calls",
     description:
-      "CRM discipline drops without daily leadership. New managers take too long to ramp.",
+      "After dozens of calls, reps forget what the lead asked, objected to or agreed on. The next conversation feels less personal and less effective.",
   },
   {
-    title: "Leads receive identical follow-ups regardless of behavior",
+    title: "Lead follow-ups ignore buyer behavior",
     description:
-      "High-intent prospects get the same messages as cold leads. Conversion suffers.",
+      "Campaigns and reminders often stay the same regardless of stage, intent, source or past interactions. High-intent leads get under-served, while colder leads get over-messaged.",
   },
   {
-    title: "Managers spend too much time on manual CRM work",
+    title: "CRM data entry takes time away from selling",
     description:
-      "Notes, fields, invoices, follow-ups and pipeline updates take 10–15 minutes per call.",
+      "Reps are expected to capture dozens of fields, notes and next steps after every call. It slows them down, creates inconsistency and leaves CRM data incomplete.",
   },
   {
-    title: "Sales calls lose context",
+    title: "Sales onboarding depends too much on managers",
     description:
-      "Without structured summaries, teams forget objections, commitments, and next steps.",
+      "With frequent turnover, new reps need constant call reviews and feedback to reach acceptable performance. Sales leaders spend too much time coaching the basics manually.",
   },
 ]
 
@@ -27,7 +27,7 @@ export function PainSection() {
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-white md:text-4xl">
-            Typical problems in lead-driven businesses we solve
+            Typical operational problems in businesses that sell through calls
           </h2>
         </div>
         <div className="mt-14 grid gap-6 md:grid-cols-2">

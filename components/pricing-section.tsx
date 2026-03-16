@@ -1,9 +1,9 @@
 import { Check } from "lucide-react"
 
 const pricingItems = [
-  "Automation projects start from $300 per implementation day",
-  "Typical systems take 2–7 days to deploy",
-  "Monthly support keeps systems stable and evolving",
+  "Most systems are deployed in 2–7 days",
+  "Implementation starts from $300/day",
+  "Optional monthly support keeps systems stable and improving",
 ]
 
 export function PricingSection() {
@@ -12,12 +12,12 @@ export function PricingSection() {
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-white md:text-4xl">
-            Pricing
+            Typical engagement
           </h2>
         </div>
 
         <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-white/10 bg-white/[0.03] p-8 text-center md:p-12">
-          <p className="text-sm text-neutral-400">From $300 per implementation day</p>
+          <p className="text-base font-semibold text-white">Implementation starts from $300/day</p>
           <ul className="mt-8 grid gap-3 text-sm text-neutral-300 md:grid-cols-3">
             {pricingItems.map((item) => (
               <li key={item} className="flex items-start gap-2">
